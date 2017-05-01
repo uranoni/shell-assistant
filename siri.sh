@@ -26,11 +26,11 @@ readFile(){
         echo "please input which file name what's content you want to see it"
         read fileNmae
 	theFile="$(find /home -type f -name $fileNmae)"
+	echo "-------------------------------------------------------"
 	echo "your file's location"
-	echo "-------------------------------------------------------"
 	echo $theFile
-	echo "The content is as follows"
 	echo "-------------------------------------------------------"
+	echo "The content is as follows"
         cat $theFile 
 	
 }
